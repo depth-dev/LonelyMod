@@ -1,0 +1,16 @@
+[
+{
+  "modid": "lonelymod",
+  "name": "LonelyMod",
+  "description": "For Absolute depression. /lonelymod",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["misterdepth"],
+  "credits": "DJtheRedstoner for helping me set up the MDK",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
