@@ -1,8 +1,11 @@
 package me.misterdepth.lonelymod;
 
-import me.misterdepth.lonelymod.commands.LonelyCommand;
-import net.minecraft.init.Blocks;
+import me.misterdepth.lonelymod.commands.LonelyAdvice;
+import me.misterdepth.lonelymod.commands.LonelyHelp;
+import me.misterdepth.lonelymod.commands.LonelyTalk;
+import me.misterdepth.lonelymod.commands.LonelyTopic;
 import net.minecraftforge.client.ClientCommandHandler;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -16,6 +19,9 @@ public class LonelyMod
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-        ClientCommandHandler.instance.registerCommand(new LonelyCommand());
+        ClientCommandHandler.instance.registerCommand(new LonelyHelp());
+        ClientCommandHandler.instance.registerCommand(new LonelyAdvice());
+        ClientCommandHandler.instance.registerCommand(new LonelyTalk());
+        ClientCommandHandler.instance.registerCommand(new LonelyTopic());
     }
 }
